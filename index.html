@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Fira+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">My Portfolio</h2>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <div class="content">
+            <div class="about" id="about">
+                <h1 class="typing-effect">I'm Eliel <span>Nyamekye</span></h1>
+                <p>I'm a passionate front-end developer with a keen eye for design, and a love for creating interactive, user-friendly web applications. <br> With a background in Computer Science, I have honed my skills in HTML, CSS, and JavaScript. <br> I'm constantly exploring new technologies and frameworks to enhance my development toolkit.</p>
+                <p>I enjoy solving complex problems and turning ideas into reality through code. Whether it's building a sleek portfolio or developing a responsive website, I thrive on challenges and am dedicated to delivering high-quality results.</p>
+                <p>When I'm not coding, you can find me gaming, reading, and listening to classical music, which helps me stay creative and inspired. I'm always eager to learn, grow, and collaborate with others in the tech community.</p>
+                <p>Feel free to check out my projects below and get in touch if you'd like to work together or just have a chat!</p>
+            </div>
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/kisspng.png" alt="shape" class="shape">
+                    <img src="Images/vibe-removebg-preview.png" alt="Eliel" class="boy">
+                </div>
+            </div>
+        </div>
+        <section id="skills">
+            <h2 id="skill">Skills</h2>
+            <div class="skill" data-skill="HTML">HTML</div>
+            <div class="skill" data-skill="CSS">CSS</div>
+            <div class="skill" data-skill="JavaScript">JavaScript</div>
+        </section>
+        <section id="projects" class="project">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project" id="proj1">
+                        <div class="project-content">
+                            <h3>Project 1: Sisi's Clothing</h3>
+                            <p>An online fashion shop called Sisi's Clothing.</p>
+                            <a href="https://github.com/ElielBright/Sisi-s.git" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project" id="proj2">
+                        <div class="project-content">
+                            <h3>Project 2: School Portfolio</h3>
+                            <p>A portfolio project work for school.</p>
+                            <a href="https://github.com/ElielBright/portfolios.git" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project" id="proj3">
+                        <div class="project-content">
+                            <h3>Project 3: Frutopia</h3>
+                            <p>Building a pastry shop for a company called Frutopia.</p>
+                            <a href="https://github.com/ElielBright/Frutopia.git" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xqkrrbrk" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <button id="dark-mode-toggle-button" class="floating-button" >🌙</button>
+        <footer>
+            <div class="social-media">
+                <a href="https://x.com/ElielBright" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eliel-bright-7b36282a3/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ElielBright" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Eliel Kwesi Nyamekye</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
